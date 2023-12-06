@@ -1,0 +1,32 @@
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Origem</th>
+            <th>Temperamento</th>
+            <th>Descrição</th>
+            <th>Foto</th>
+        </tr>
+        
+    </thead>
+    <tbody>
+        <tr *ngFor ="let cat of cats">
+            <td>{{ cat.id }}</td>
+            <td>{{ cat.name }}</td>
+            <td>{{ cat.origin }}</td>
+            <td>{{ cat.temperament }}</td>
+            <td>{{ cat.description }}</td>
+            <td><img src={{cat.image}}></td>
+        </tr>
+    </tbody>
+</table>
+<!-- <div *ngFor="let cat of cats">
+    <p>Nome: {{ cat.id }}</p>
+    <p>Raça: {{ cat.name }}</p>
+    <p>Idade: {{ cat.origin }}</p>
+    <p>Cor: {{ cat.description }}</p>
+    <hr>
+</div> -->
+  
+  
